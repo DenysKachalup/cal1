@@ -1,48 +1,48 @@
-#include <iostream>
+п»ї#include <iostream>
 
 using namespace std;
 
 int main() {
-	int c, a, b, x;
-
+	double  a, b, x;
+	char c;
 	setlocale(LC_CTYPE, "rus");
 
 
 
 	do {
-		cout << "Введіть перше число" << endl;
+		cout << "1 chislo" << endl;
 		cin >> a;
-		cout << "Введіть друге число" << endl;
+		cout << "2 chislo" << endl;
 		cin >> b;
 
-		cout << "Введіть операцію" << endl;
-		cout << " 1 + " << endl;
+		cout << "operation" << endl;
+		cout << "  + " << endl;
 
-		cout << " 2 - " << endl;
-		cout << " 3 *" << endl;
-		cout << " 4 / " << endl;
+		cout << "  - " << endl;
+		cout << "  *" << endl;
+		cout << "  / " << endl;
 		cin >> c;
 
 		switch (c)
 		{
-		case 1:
-			cout << "результат" << a + b << endl;
+		case '+':
+			cout << "Result " << a + b << endl;
 			break;
 
-		case 2:
-			cout << "результат" << a - b << endl;
+		case '-':
+			cout << "Result " << a - b << endl;
 			break;
-		case 3:
-			cout << "результат" << a * b << endl;
+		case '*':
+			cout << "Result " << a * b << endl;
 			break;
-		case 4:
-			cout << "результат" << a / b << endl;
+		case '/':
+			cout << "Result " << a / b << endl;
 			break;
 		}
 
 
 
-		cout << "якщо хочете повернутися натисніть 1" << endl;
+		cout << "Natusny 1" << endl;
 		cin >> x;
 	}
 
